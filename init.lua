@@ -1,4 +1,5 @@
 require('ramon.options')
 require('ramon.keymaps')
 require('ramon.plugins')
+require('ramon.treesitter')
 require('ramon.lsp.server-config')

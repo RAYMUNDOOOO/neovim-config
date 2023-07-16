@@ -36,4 +36,10 @@ return require('packer').startup(function(use)
 			{ 'L3MON4D3/LuaSnip' },
 		}
 	}
+
+	-- Better syntax highlighting (https://github.com/nvim-treesitter/nvim-treesitter)
+	use {
+		'nvim-treesitter/nvim-treesitter',
+		run = ':TSUpdate'
+	}
 end)
