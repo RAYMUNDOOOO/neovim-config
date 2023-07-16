@@ -1,6 +1,16 @@
 -- Configuration found here: https://github.com/wbthomason/packer.nvim
 vim.cmd [[packadd packer.nvim]]
 
+-- Have Packer use a popup window
+local packer = require('packer')
+packer.init({
+	display = {
+		open_fn = function()
+			return require('packer.util').float({ border = 'rounded' })
+		end,
+	},
+})
+
 return require('packer').startup(function(use)
 	-- Packer can manage itself
 	use 'wbthomason/packer.nvim'
