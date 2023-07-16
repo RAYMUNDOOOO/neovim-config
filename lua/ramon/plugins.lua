@@ -37,9 +37,15 @@ return require('packer').startup(function(use)
 		}
 	}
 
+	use { 'saadparwaiz1/cmp_luasnip' }
+	use { 'hrsh7th/cmp-path' }
+
 	-- Better syntax highlighting (https://github.com/nvim-treesitter/nvim-treesitter)
 	use {
 		'nvim-treesitter/nvim-treesitter',
 		run = ':TSUpdate'
 	}
+
+	-- Themes because the default terminal one makes me blind!
+	use { 'catppuccin/nvim', as = 'catppuccin' }
 end)
