@@ -23,7 +23,7 @@ cmp.setup({
 
 		-- Scroll through suggestions
 		['<C-k>'] = cmp.mapping.select_prev_item(),
-		['<C-j>'] = cmp.mapping.select_next_item(),
+		['<Tab>'] = cmp.mapping.select_next_item(),
 	}),
 	sources = cmp.config.sources({
 		{ name = 'nvim_lsp' },
