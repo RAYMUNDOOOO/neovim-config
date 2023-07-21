@@ -1,7 +1,7 @@
 local options = {
 	backup = false,
 	clipboard = "unnamedplus", 		-- Enables system clipboard.
-	cmdheight = 2,				-- Height of cmd at bottom of screen.
+	cmdheight = 0,				-- Height of cmd at bottom of screen.
 	wrap = false,				-- Disables word wrapping.
 	completeopt = { "menuone", "noselect" },
 	conceallevel = 0,
