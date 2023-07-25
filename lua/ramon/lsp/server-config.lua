@@ -18,4 +18,12 @@ lsp.ensure_installed({
 	'powershell_es',
 })
 
+-- Configuring lua_ls
+require('lspconfig').lua_ls.setup ({
+	diagnostics = {
+		disable = {
+			'trailing-space', 'lowercase-global' 
+		}
+	}
+})
 lsp.setup()
