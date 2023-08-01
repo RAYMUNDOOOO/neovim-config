@@ -1,3 +1,8 @@
+-- Note: Until I figure out a better way to switch themes on the fly and save
+-- the configuration upon it being changed, I'll just comment out the ones I'm not using.
+
+-- catppuccin 
+--[[
 require("catppuccin").setup({
 	flavour = "mocha",
 	background = {
@@ -17,3 +22,7 @@ require("catppuccin").setup({
 })
 
 vim.cmd.colorscheme "catppuccin"
+--]]
+
+-- everforest
+require('everforest').load()

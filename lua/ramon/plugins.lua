@@ -48,4 +48,17 @@ return require('packer').startup(function(use)
 
 	-- Themes because the default terminal one makes me blind!
 	use { 'catppuccin/nvim', as = 'catppuccin' }
+
+	use({
+		"neanias/everforest-nvim",
+		-- Optional; default configuration will be used if setup isn't called.
+		config = function()
+			require("everforest").setup()
+		end,
+	})
+
+	use {
+		'nvim-lualine/lualine.nvim',
+		requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+	}
 end)
