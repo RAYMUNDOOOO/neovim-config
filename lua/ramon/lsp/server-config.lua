@@ -23,8 +23,9 @@ require('lspconfig').lua_ls.setup({
 	settings = {
 		Lua = {
 			['diagnostics.disable'] = {
-				'lowercase-global',
-				'trailing-space'
+				'trailing-space',
+				'lowercase-global'
+
 			}
 		}
 	}

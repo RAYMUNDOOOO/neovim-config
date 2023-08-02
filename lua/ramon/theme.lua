@@ -25,4 +25,15 @@ vim.cmd.colorscheme "catppuccin"
 --]]
 
 -- everforest
-require('everforest').load()
+everforest = require('everforest')
+everforest.setup({
+	background = "soft",
+	transparent_background_level = 2,
+	italics = false,
+	disable_italic_comments = true,
+	sign_column_background = "grey",
+	ui_contrast = "high",
+	diagnostic_text_highlight = true,
+	diagnostic_virtual_text = "grey",
+})
+everforest.load()
